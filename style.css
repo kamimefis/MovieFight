@@ -1,0 +1,175 @@
+/* ===========================
+   DARK MODE – GLOBAL
+   =========================== */
+body.is-dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.is-dark-mode .hero.is-primary {
+  background: linear-gradient(135deg, #232323, #111);
+  color: #fff;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+}
+
+body.is-dark-mode .hero .title,
+body.is-dark-mode .hero .subtitle {
+  color: #f5f5f5 !important;
+}
+
+body.is-dark-mode .container {
+  color: #e0e0e0;
+}
+
+/* ===========================
+   BOXES
+   =========================== */
+body.is-dark-mode .box {
+  background-color: #1d1d1d;
+  border: 1px solid #2b2b2b;
+  color: #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+body.is-dark-mode .box:hover {
+  background-color: #262626;
+}
+
+/* ===========================
+   TUTORIAL CARD
+   =========================== */
+body.is-dark-mode .notification.is-primary {
+  background-color: #1f1f1f;
+  border: 1px solid #585757;
+  color: #e0e0e0;
+  border-radius: 7px;
+}
+
+.tutorial {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* ===========================
+   AUTOCOMPLETE INPUT
+   =========================== */
+.autocomplete-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #333;
+  border-radius: 6px;
+  background-color: #181818;
+  color: #e0e0e0;
+  transition: 0.2s ease-in-out;
+}
+
+.autocomplete-input::placeholder {
+  color: #888;
+}
+
+.autocomplete-input:focus {
+  outline: none;
+  border-color: #4f6df5;
+  box-shadow: 0 0 0 0.125em rgba(79, 109, 245, 0.3);
+}
+
+/* ===========================
+   DROPDOWN RESULTS
+   =========================== */
+.results {
+  max-height: 350px;
+  overflow-y: auto;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #181818;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ===========================
+   DROPDOWN ITEMS
+   =========================== */
+.dropdown-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid #2a2a2a;
+  background-color: #181818;
+  transition: background 0.15s ease;
+  color: #e0e0e0;
+}
+
+.dropdown-item:hover {
+  background-color: #242424;
+}
+
+.dropdown-item img {
+  height: 52px;
+  margin-right: 12px;
+  border-radius: 4px;
+  border: 1px solid #333;
+}
+
+/* ===========================
+   MOVIE SUMMARY CARDS
+   =========================== */
+#left-summary .box,
+#right-summary .box {
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-color: #1b1b1b;
+  border: 1px solid #333;
+  transition: transform 0.25s ease, box-shadow 0.3s ease;
+}
+
+#left-summary .box:hover,
+#right-summary .box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
+}
+
+/* ===========================
+   MOVIE POSTER AREA
+   =========================== */
+figure.image {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+figure.image img {
+  width: 140px;
+  border-radius: 6px;
+}
+
+/* ===========================
+   HERO SPACING
+   =========================== */
+.hero {
+  margin-bottom: 25px;
+}
+
+/* ===========================
+   SCROLLBAR DARK MODE
+   =========================== */
+.results::-webkit-scrollbar {
+  width: 8px;
+}
+
+.results::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.results::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+html,
+body.is-dark-mode {
+  height: 100%;
+  min-height: 100vh;
+  background-color: #121212 !important;
+}

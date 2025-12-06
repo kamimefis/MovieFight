@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
+    <!-- Bulma -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.0/css/bulma.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Movie Fight</title>
+  </head>
+
+  <body class="is-dark-mode">
+
+    <!-- HERO -->
+    <section class="hero is-primary is-bold">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title is-size-2">
+            Movie Fight <i class="fas fa-film"></i>
+          </h1>
+          <p class="subtitle is-size-5">Compara dos películas y descubre al ganador</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAIN -->
+    <div class="container py-6">
+      <div class="columns is-variable is-6">
+
+        <!-- Left column -->
+        <div class="column">
+          <div id="left-autocomplete" class="box p-4 shadow-sm"></div>
+          <div id="left-summary" class="mt-4"></div>
+        </div>
+
+        <!-- Right column -->
+        <div class="column">
+          <div id="right-autocomplete" class="box p-4 shadow-sm"></div>
+          <div id="right-summary" class="mt-4"></div>
+        </div>
+      </div>
+
+      <!-- Callout -->
+      <div class="notification is-primary has-text-centered tutorial mt-6 p-5 shadow-sm">
+        <h2 class="title is-4">Busca una película en ambos lados</h2>
+        <p class="subtitle">Te diremos cuál es la mejor</p>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="utils.js"></script>
+    <script src="autocomplete.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
